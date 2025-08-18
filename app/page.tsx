@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { TypingAnimation } from "@/components/typing-animation"
 import {
   Mic,
   Shield,
@@ -43,10 +44,15 @@ export default function HomePage() {
               <a href="#testimonials" className="text-muted-foreground hover:text-foreground transition-colors">
                 Testimonials
               </a>
+              <a href="/profile" className="text-muted-foreground hover:text-foreground transition-colors">
+                Profile
+              </a>
               <Button variant="outline" size="sm">
                 Learn More
               </Button>
-              <Button size="sm">Get Started</Button>
+              <Button size="sm" asChild>
+                <a href="/get-started">Get Started</a>
+              </Button>
             </div>
           </div>
         </div>
@@ -61,16 +67,25 @@ export default function HomePage() {
               Empowering India's Workforce
             </Badge>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-tight">
-              Empowering India's <span className="text-primary">Informal Workforce</span>
+              <TypingAnimation
+                messages={[
+                  "Empowering India's Informal Workforce",
+                  "Secure Digital Agreements for All",
+                  "Blockchain Trust Meets AI Fairness",
+                ]}
+                className="text-primary"
+              />
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
               Simple, Secure Digital Agreements for Everyone. Blockchain-powered trust meets AI-driven fairness for
               workers across India.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="text-lg px-8 py-6">
-                Get Started
-                <Zap className="ml-2 w-5 h-5" />
+              <Button size="lg" className="text-lg px-8 py-6" asChild>
+                <a href="/get-started">
+                  Get Started
+                  <Zap className="ml-2 w-5 h-5" />
+                </a>
               </Button>
               <Button variant="outline" size="lg" className="text-lg px-8 py-6 bg-transparent">
                 Learn More
@@ -87,21 +102,30 @@ export default function HomePage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">How It Works</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Four simple steps to secure, fair digital agreements
+              Six simple steps to secure, fair digital agreements
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card className="text-center hover:shadow-lg transition-shadow">
               <CardHeader>
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Mic className="w-8 h-8 text-primary" />
                 </div>
-                <CardTitle className="text-lg">Create Contracts</CardTitle>
+                <CardTitle className="text-lg">1. Create</CardTitle>
               </CardHeader>
               <CardContent>
-                <CardDescription className="text-base">
-                  Create contracts in seconds using voice or text input in your preferred language
-                </CardDescription>
+                <CardDescription className="text-base">Input details via text/voice in local languages</CardDescription>
+              </CardContent>
+            </Card>
+            <Card className="text-center hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Users className="w-8 h-8 text-primary" />
+                </div>
+                <CardTitle className="text-lg">2. Verify</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription className="text-base">Aadhaar KYC + details of both parties collected</CardDescription>
               </CardContent>
             </Card>
             <Card className="text-center hover:shadow-lg transition-shadow">
@@ -109,11 +133,22 @@ export default function HomePage() {
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Zap className="w-8 h-8 text-primary" />
                 </div>
-                <CardTitle className="text-lg">AI Ensures Fairness</CardTitle>
+                <CardTitle className="text-lg">3. AI Assist</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription className="text-base">AI generates legally sound contract</CardDescription>
+              </CardContent>
+            </Card>
+            <Card className="text-center hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <FileText className="w-8 h-8 text-primary" />
+                </div>
+                <CardTitle className="text-lg">4. Finalize</CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-base">
-                  Our AI reviews contracts for fairness and compliance with labor laws
+                  Both parties approve terms, amount, and conditions
                 </CardDescription>
               </CardContent>
             </Card>
@@ -122,11 +157,11 @@ export default function HomePage() {
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Shield className="w-8 h-8 text-primary" />
                 </div>
-                <CardTitle className="text-lg">Blockchain Trust</CardTitle>
+                <CardTitle className="text-lg">5. Blockchain Record</CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-base">
-                  Blockchain technology and QR codes provide immutable trust and verification
+                  Contract stored on blockchain → unique tamper-proof Contract ID
                 </CardDescription>
               </CardContent>
             </Card>
@@ -135,12 +170,10 @@ export default function HomePage() {
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Smartphone className="w-8 h-8 text-primary" />
                 </div>
-                <CardTitle className="text-lg">Easy Access</CardTitle>
+                <CardTitle className="text-lg">6. Share</CardTitle>
               </CardHeader>
               <CardContent>
-                <CardDescription className="text-base">
-                  Access your contracts easily on any smartphone, even without internet
-                </CardDescription>
+                <CardDescription className="text-base">Get QR code for instant verification</CardDescription>
               </CardContent>
             </Card>
           </div>
