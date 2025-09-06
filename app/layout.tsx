@@ -6,10 +6,14 @@ import { LanguageProvider } from "@/contexts/language-context"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "Jan Genie - Empowering India's Workforce & Government Schemes",
-  description:
-    "AI-powered platform for digital agreements and government scheme eligibility. Blockchain-powered trust meets AI-driven fairness for workers across India.",
+  title: "JanGenie",
+  description: "Your AI-powered admission eligibility genie",
   generator: "v0.app",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon-16x16.jpg",
+    apple: "/apple-touch-icon.jpg",
+  },
 }
 
 export default function RootLayout({
