@@ -7,6 +7,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { TypingAnimation } from "@/components/typing-animation"
 import { LanguageSwitcher } from "@/components/language-switcher"
 import { useLanguage } from "@/contexts/language-context"
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import {
   Mic,
   Shield,
@@ -20,6 +21,10 @@ import {
   FileText,
   Zap,
   Heart,
+  Building2,
+  ChevronDown,
+  BarChart3,
+  Menu,
 } from "lucide-react"
 
 export default function HomePage() {
@@ -33,9 +38,9 @@ export default function HomePage() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <FileText className="w-5 h-5 text-primary-foreground" />
+                <Zap className="w-5 h-5 text-primary-foreground" />
               </div>
-              <span className="text-xl font-bold text-foreground">Jan-Contract</span>
+              <span className="text-xl font-bold text-foreground">Jan Genie</span>
             </div>
             <div className="flex items-center gap-2">
               <LanguageSwitcher />
@@ -58,19 +63,92 @@ export default function HomePage() {
                 >
                   {t("nav.testimonials")}
                 </a>
+
+                {/* Services Dropdown */}
+                <DropdownMenu>
+                  <DropdownMenuTrigger asChild>
+                    <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground">
+                      {t("nav.services")}
+                      <ChevronDown className="w-4 h-4 ml-1" />
+                    </Button>
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent align="end" className="w-56">
+                    <DropdownMenuItem asChild>
+                      <a href="/get-started" className="flex items-center">
+                        <FileText className="w-4 h-4 mr-2" />
+                        {t("nav.contracts")}
+                      </a>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
+                      <a href="/schemes" className="flex items-center">
+                        <Building2 className="w-4 h-4 mr-2" />
+                        {t("nav.schemes")}
+                      </a>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
+                      <a href="/financial-dashboard" className="flex items-center">
+                        <BarChart3 className="w-4 h-4 mr-2" />
+                        {t("nav.financial")}
+                      </a>
+                    </DropdownMenuItem>
+                  </DropdownMenuContent>
+                </DropdownMenu>
+
                 <a href="/profile" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
                   {t("nav.profile")}
                 </a>
               </div>
+
+              {/* Mobile Menu */}
+              <div className="lg:hidden">
+                <DropdownMenu>
+                  <DropdownMenuTrigger asChild>
+                    <Button variant="ghost" size="sm">
+                      <Menu className="w-4 h-4" />
+                    </Button>
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent align="end" className="w-56">
+                    <DropdownMenuItem asChild>
+                      <a href="#features">{t("nav.features")}</a>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
+                      <a href="#how-it-works">{t("nav.howItWorks")}</a>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
+                      <a href="#impact">{t("nav.impact")}</a>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
+                      <a href="#testimonials">{t("nav.testimonials")}</a>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
+                      <a href="/get-started" className="flex items-center">
+                        <FileText className="w-4 h-4 mr-2" />
+                        {t("nav.contracts")}
+                      </a>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
+                      <a href="/schemes" className="flex items-center">
+                        <Building2 className="w-4 h-4 mr-2" />
+                        {t("nav.schemes")}
+                      </a>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
+                      <a href="/financial-dashboard" className="flex items-center">
+                        <BarChart3 className="w-4 h-4 mr-2" />
+                        {t("nav.financial")}
+                      </a>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
+                      <a href="/profile">{t("nav.profile")}</a>
+                    </DropdownMenuItem>
+                  </DropdownMenuContent>
+                </DropdownMenu>
+              </div>
+
               <div className="hidden md:flex items-center space-x-3">
                 <Button variant="outline" size="sm">
                   {t("nav.learnMore")}
                 </Button>
-                <Button size="sm" asChild>
-                  <a href="/get-started">{t("nav.getStarted")}</a>
-                </Button>
-              </div>
-              <div className="md:hidden">
                 <Button size="sm" asChild>
                   <a href="/get-started">{t("nav.getStarted")}</a>
                 </Button>
@@ -108,9 +186,12 @@ export default function HomePage() {
                 variant="outline"
                 size="lg"
                 className="text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 bg-transparent"
+                asChild
               >
-                {t("nav.learnMore")}
-                <FileText className="ml-2 w-4 sm:w-5 h-4 sm:h-5" />
+                <a href="/schemes">
+                  {t("nav.schemes")}
+                  <Building2 className="ml-2 w-4 sm:w-5 h-4 sm:h-5" />
+                </a>
               </Button>
             </div>
           </div>
@@ -417,9 +498,9 @@ export default function HomePage() {
             <div className="sm:col-span-2 lg:col-span-1">
               <div className="flex items-center space-x-2 mb-4">
                 <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                  <FileText className="w-5 h-5 text-primary-foreground" />
+                  <Zap className="w-5 h-5 text-primary-foreground" />
                 </div>
-                <span className="text-xl font-bold text-foreground">Jan-Contract</span>
+                <span className="text-xl font-bold text-foreground">Jan Genie</span>
               </div>
               <p className="text-sm sm:text-base text-muted-foreground mb-4">{t("footer.description")}</p>
               <div className="flex space-x-2">

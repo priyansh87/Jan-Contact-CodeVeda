@@ -19,17 +19,36 @@ const translations = {
     "nav.impact": "Impact",
     "nav.testimonials": "Testimonials",
     "nav.profile": "Profile",
+    "nav.schemes": "Government Schemes",
+    "nav.services": "Services", // Added services dropdown
+    "nav.contracts": "Digital Contracts", // Added contracts navigation
+    "nav.financial": "Financial Dashboard", // Added financial dashboard navigation
     "nav.learnMore": "Learn More",
     "nav.getStarted": "Get Started",
     "nav.menu": "Menu",
 
     // Hero Section
-    "hero.badge": "Empowering India's Workforce",
+    "hero.badge": "Empowering India's Workforce & Business Growth",
     "hero.typing1": "Empowering India's Informal Workforce",
-    "hero.typing2": "Secure Digital Agreements for All",
+    "hero.typing2": "AI-Powered Government Scheme Eligibility",
     "hero.typing3": "Blockchain Trust Meets AI Fairness",
     "hero.description":
-      "Simple, Secure Digital Agreements for Everyone. Blockchain-powered trust meets AI-driven fairness for workers across India.",
+      "Your AI-powered genie for digital agreements and government scheme eligibility. Blockchain-powered trust meets AI-driven fairness for workers and businesses across India.",
+
+    "schemes.title": "Government Schemes Eligibility",
+    "schemes.subtitle": "Discover MSME and government schemes tailored for your business",
+    "schemes.chatbot.title": "AI Scheme Assistant",
+    "schemes.chatbot.subtitle": "Get personalized scheme recommendations based on your business profile",
+    "schemes.form.title": "Business Profile Assessment",
+    "schemes.form.businessName": "Business Name",
+    "schemes.form.sector": "Business Sector",
+    "schemes.form.revenue": "Annual Revenue (₹)",
+    "schemes.form.employees": "Number of Employees",
+    "schemes.form.location": "Business Location",
+    "schemes.form.achievements": "Business Achievements",
+    "schemes.form.submit": "Get Scheme Recommendations",
+    "schemes.chat.placeholder": "Ask me about government schemes...",
+    "schemes.chat.send": "Send",
 
     // How It Works
     "howItWorks.title": "How It Works",
@@ -48,8 +67,8 @@ const translations = {
     "howItWorks.step6.desc": "Get QR code for instant verification",
 
     // Features
-    "features.title": "Built for India's Workers",
-    "features.subtitle": "Features designed with accessibility, trust, and worker rights at the core",
+    "features.title": "Built for India's Workers & Businesses", // Updated for Jan Genie
+    "features.subtitle": "Features designed with accessibility, trust, and growth at the core",
     "features.language.title": "Regional Language Support",
     "features.language.desc":
       "Create and understand contracts in Hindi, Tamil, Bengali, and 15+ other Indian languages",
@@ -66,7 +85,7 @@ const translations = {
 
     // Impact
     "impact.title": "Making Real Impact",
-    "impact.subtitle": "Empowering workers across India with secure, fair digital agreements",
+    "impact.subtitle": "Empowering workers and businesses across India with secure, fair digital solutions", // Updated for businesses too
     "impact.workers": "Workers Protected",
     "impact.workersDesc": "Informal workers now have secure, legally-binding agreements",
     "impact.contracts": "Contracts Generated",
@@ -76,11 +95,11 @@ const translations = {
 
     // Testimonials
     "testimonials.title": "What Workers Say",
-    "testimonials.subtitle": "Real stories from workers who've found security through Jan-Contract",
+    "testimonials.subtitle": "Real stories from workers who've found security through Jan Genie", // Updated brand name
     "testimonials.rajesh.name": "Rajesh Kumar",
     "testimonials.rajesh.role": "Construction Worker, Delhi",
     "testimonials.rajesh.text":
-      "Finally, I have proof of my work agreements. No more disputes about payment terms. Jan-Contract gave me confidence and security.",
+      "Finally, I have proof of my work agreements. No more disputes about payment terms. Jan Genie gave me confidence and security.",
     "testimonials.priya.name": "Priya Sharma",
     "testimonials.priya.role": "Domestic Worker, Mumbai",
     "testimonials.priya.text":
@@ -88,7 +107,7 @@ const translations = {
     "testimonials.amit.name": "Amit Singh",
     "testimonials.amit.role": "Shop Owner, Bangalore",
     "testimonials.amit.text":
-      "As an employer, Jan-Contract helps me create fair agreements quickly. Both my workers and I feel more secure now.",
+      "As an employer, Jan Genie helps me create fair agreements quickly. Both my workers and I feel more secure now.",
 
     // CTA
     "cta.title": "Join us in building a future where every worker's handshake is honored",
@@ -96,11 +115,21 @@ const translations = {
     "cta.github": "Contribute on GitHub",
 
     // Footer
-    "footer.description": "Empowering India's informal workforce with secure, fair digital agreements.",
+    "footer.description": "Empowering India's informal workforce and businesses with secure, fair digital solutions.", // Updated for businesses
     "footer.product": "Product",
     "footer.resources": "Resources",
     "footer.contact": "Contact",
-    "footer.copyright": "© 2024 Jan-Contract. Built with ❤️ for India's workers.",
+    "footer.copyright": "© 2024 Jan Genie. Built with ❤️ for India's workers and businesses.", // Updated brand name
+
+    // Financial Dashboard
+    "financial.title": "Financial Dashboard",
+    "financial.subtitle": "Convert handwritten records to digital insights",
+    "financial.upload": "Upload Financial Records",
+    "financial.processing": "Processing with AI OCR...",
+    "financial.revenue": "Total Revenue",
+    "financial.expenses": "Total Expenses",
+    "financial.profit": "Net Profit",
+    "financial.assets": "Total Assets",
   },
   hi: {
     // Navigation
@@ -109,17 +138,36 @@ const translations = {
     "nav.impact": "प्रभाव",
     "nav.testimonials": "प्रशंसापत्र",
     "nav.profile": "प्रोफ़ाइल",
+    "nav.schemes": "सरकारी योजनाएं",
+    "nav.services": "सेवाएं", // Added services dropdown in Hindi
+    "nav.contracts": "डिजिटल अनुबंध", // Added contracts navigation in Hindi
+    "nav.financial": "वित्तीय डैशबोर्ड", // Added financial dashboard navigation in Hindi
     "nav.learnMore": "और जानें",
     "nav.getStarted": "शुरू करें",
     "nav.menu": "मेनू",
 
     // Hero Section
-    "hero.badge": "भारत के कार्यबल को सशक्त बनाना",
+    "hero.badge": "भारत के कार्यबल और व्यापारिक विकास को सशक्त बनाना",
     "hero.typing1": "भारत के अनौपचारिक कार्यबल को सशक्त बनाना",
-    "hero.typing2": "सभी के लिए सुरक्षित डिजिटल समझौते",
+    "hero.typing2": "AI-संचालित सरकारी योजना पात्रता",
     "hero.typing3": "ब्लॉकचेन ट्रस्ट मिलता है AI निष्पक्षता",
     "hero.description":
-      "सभी के लिए सरल, सुरक्षित डिजिटल समझौते। ब्लॉकचेन-संचालित विश्वास भारत भर के श्रमिकों के लिए AI-संचालित निष्पक्षता से मिलता है।",
+      "डिजिटल समझौतों और सरकारी योजना पात्रता के लिए आपका AI-संचालित जिन्न। ब्लॉकचेन-संचालित विश्वास भारत भर के श्रमिकों और व्यवसायों के लिए AI-संचालित निष्पक्षता से मिलता है।",
+
+    "schemes.title": "सरकारी योजना पात्रता",
+    "schemes.subtitle": "अपने व्यवसाय के लिए तैयार MSME और सरकारी योजनाओं की खोज करें",
+    "schemes.chatbot.title": "AI योजना सहायक",
+    "schemes.chatbot.subtitle": "अपनी व्यावसायिक प्रोफ़ाइल के आधार पर व्यक्तिगत योजना सिफारिशें प्राप्त करें",
+    "schemes.form.title": "व्यावसायिक प्रोफ़ाइल मूल्यांकन",
+    "schemes.form.businessName": "व्यवसाय का नाम",
+    "schemes.form.sector": "व्यावसायिक क्षेत्र",
+    "schemes.form.revenue": "वार्षिक आय (₹)",
+    "schemes.form.employees": "कर्मचारियों की संख्या",
+    "schemes.form.location": "व्यवसाय का स्थान",
+    "schemes.form.achievements": "व्यावसायिक उपलब्धियां",
+    "schemes.form.submit": "योजना सिफारिशें प्राप्त करें",
+    "schemes.chat.placeholder": "मुझसे सरकारी योजनाओं के बारे में पूछें...",
+    "schemes.chat.send": "भेजें",
 
     // How It Works
     "howItWorks.title": "यह कैसे काम करता है",
@@ -138,9 +186,9 @@ const translations = {
     "howItWorks.step6.desc": "तत्काल सत्यापन के लिए QR कोड प्राप्त करें",
 
     // Features
-    "features.title": "भारत के श्रमिकों के लिए बनाया गया",
-    "features.subtitle": "पहुंच, विश्वास और श्रमिक अधिकारों को मूल में रखकर डिज़ाइन की गई विशेषताएं",
-    "features.language.title": "क्षेत्रीय भाषा समर्थन",
+    "features.title": "भारत के श्रमिकों और व्यवसायों के लिए बनाया गया", // Updated for Jan Genie
+    "features.subtitle": "पहुंच, विश्वास और वளर்ச்சியை மூலம் வடிவமைக்கப்பட்ட அம்சங்கள்",
+    "features.language.title": "क्षेत्रीय भाषा समர्थन",
     "features.language.desc": "हिंदी, तमिल, बंगाली और 15+ अन्य भारतीय भाषाओं में अनुबंध बनाएं और समझें",
     "features.blockchain.title": "ब्लॉकचेन-समर्थित विश्वास",
     "features.blockchain.desc": "अपरिवर्तनीय रिकॉर्ड सुनिश्चित करते हैं कि आपके समझौतों के साथ छेड़छाड़ या विवाद नहीं हो सकता",
@@ -155,7 +203,7 @@ const translations = {
 
     // Impact
     "impact.title": "वास्तविक प्रभाव बनाना",
-    "impact.subtitle": "सुरक्षित, निष्पक्ष डिजिटल समझौतों के साथ भारत भर के श्रमिकों को सशक्त बनाना",
+    "impact.subtitle": "सुरक्षित, निष्पक्ष डिजिटल समझौतों के साथ भारत भर के श्रमिकों और व्यवसायों को सशक्त बनाना", // Updated for businesses too
     "impact.workers": "संरक्षित श्रमिक",
     "impact.workersDesc": "अनौपचारिक श्रमिकों के पास अब सुरक्षित, कानूनी रूप से बाध्यकारी समझौते हैं",
     "impact.contracts": "उत्पन्न अनुबंध",
@@ -165,7 +213,7 @@ const translations = {
 
     // Testimonials
     "testimonials.title": "श्रमिक क्या कहते हैं",
-    "testimonials.subtitle": "उन श्रमिकों की वास्तविक कहानियां जिन्होंने जन-कॉन्ट्रैक्ट के माध्यम से सुरक्षा पाई है",
+    "testimonials.subtitle": "उन श्रमिकों की वास्तविक कहानियां जिन्होंने जन-कॉन्ट्रैक्ट के माध्यम से सुरक्षा पाई है", // Updated brand name
     "testimonials.rajesh.name": "राजेश कुमार",
     "testimonials.rajesh.role": "निर्माण श्रमिक, दिल्ली",
     "testimonials.rajesh.text":
@@ -185,11 +233,21 @@ const translations = {
     "cta.github": "GitHub पर योगदान दें",
 
     // Footer
-    "footer.description": "सुरक्षित, निष्पक्ष डिजिटल समझौतों के साथ भारत के अनौपचारिक कार्यबल को सशक्त बनाना।",
+    "footer.description": "सुरक्षित, निष्पक्ष डिजिटल समझौतों के साथ भारत के अनौपचारिक कार्यबल और व्यवसायों को सशक्त बनाना।", // Updated for businesses
     "footer.product": "उत्पाद",
     "footer.resources": "संसाधन",
     "footer.contact": "संपर्क",
-    "footer.copyright": "© 2024 जन-कॉन्ट्रैक्ट। भारत के श्रमिकों के लिए ❤️ के साथ बनाया गया।",
+    "footer.copyright": "© 2024 जन-कॉन्ट्रैक्ट। भारत के श्रमिकों और व्यवसायों के लिए ❤️ के साथ बनाया गया।", // Updated brand name
+
+    // Financial Dashboard
+    "financial.title": "वित्तीय डैशबोर्ड",
+    "financial.subtitle": "हस्तलिखित रिकॉर्ड को डिजिटल अंतर्दृष्टि में बदलें",
+    "financial.upload": "वित्तीय रिकॉर्ड अपलोड करें",
+    "financial.processing": "AI OCR के साथ प्रसंस्करण...",
+    "financial.revenue": "कुल आय",
+    "financial.expenses": "कुल व्यय",
+    "financial.profit": "शुद्ध लाभ",
+    "financial.assets": "कुल संपत्ति",
   },
   ta: {
     // Navigation
@@ -198,17 +256,36 @@ const translations = {
     "nav.impact": "தாக்கம்",
     "nav.testimonials": "சான்றுகள்",
     "nav.profile": "சுயவிவரம்",
+    "nav.schemes": "அரசு திட்டங்கள்",
+    "nav.services": "சேவைகள்", // Added services dropdown in Tamil
+    "nav.contracts": "டிஜிட்டல் ஒப்பந்தங்கள்", // Added contracts navigation in Tamil
+    "nav.financial": "நிதி டாஷ்போர்டு", // Added financial dashboard navigation in Tamil
     "nav.learnMore": "மேலும் அறிய",
     "nav.getStarted": "தொடங்குங்கள்",
     "nav.menu": "மெனு",
 
     // Hero Section
-    "hero.badge": "இந்தியாவின் தொழிலாளர் சக்தியை வலுப்படுத்துதல்",
+    "hero.badge": "இந்தியாவின் தொழிலாளர் சக்தி மற்றும் வணிக வளர்ச்சியை வலுப்படுத்துதல்",
     "hero.typing1": "இந்தியாவின் முறைசாரா தொழிலாளர் சக்தியை வலுப்படுத்துதல்",
-    "hero.typing2": "அனைவருக்கும் பாதுகாப்பான டிஜிட்டல் ஒப்பந்தங்கள்",
+    "hero.typing2": "AI-இயங்கும் அரசு திட்ட தகுதி",
     "hero.typing3": "பிளாக்செயின் நம்பிக்கை AI நியாயத்தை சந்திக்கிறது",
     "hero.description":
-      "அனைவருக்கும் எளிய, பாதுகாப்பான டிஜிட்டல் ஒப்பந்தங்கள். பிளாக்செயின்-இயங்கும் நம்பிக்கை இந்தியா முழுவதும் உள்ள தொழிலாளர்களுக்கு AI-இயங்கும் நியாயத்தை சந்திக்கிறது।",
+      "டிஜிட்டல் ஒப்பந்தங்கள் மற்றும் அரசு திட்ட தகுதிக்கான உங்கள் AI-இயங்கும் ஜின். பிளாக்செயின்-இயங்கும் நம்பிக்கை இந்தியா முழுவதும் உள்ள தொழிலாளர்கள் மற்றும் வணிகங்களுக்கு AI-இயங்கும் நியாயத்தை சந்திக்கிறது।",
+
+    "schemes.title": "அரசு திட்ட தகுதி",
+    "schemes.subtitle": "உங்கள் வணிகத்திற்கு ஏற்ற MSME மற்றும் அரசு திட்டங்களைக் கண்டறியுங்கள்",
+    "schemes.chatbot.title": "AI திட்ட உதவியாளர்",
+    "schemes.chatbot.subtitle": "உங்கள் வணிக சுயவிவரத்தின் அடிப்படையில் தனிப்பயனாக்கப்பட்ட திட்ட பரிந்துரைகளைப் பெறுங்கள்",
+    "schemes.form.title": "வணிக சுயவிவர மதிப்பீடு",
+    "schemes.form.businessName": "வணிக பெயர்",
+    "schemes.form.sector": "வணிக துறை",
+    "schemes.form.revenue": "ஆண்டு வருமானம் (₹)",
+    "schemes.form.employees": "ஊழியர்களின் எண்ணிக்கை",
+    "schemes.form.location": "வணிக இடம்",
+    "schemes.form.achievements": "வணிக சாதனைகள்",
+    "schemes.form.submit": "திட்ட பரிந்துரைகளைப் பெறுங்கள்",
+    "schemes.chat.placeholder": "அரசு திட்டங்களைப் பற்றி என்னிடம் கேளுங்கள்...",
+    "schemes.chat.send": "அனுப்பு",
 
     // How It Works
     "howItWorks.title": "இது எப்படி வேலை செய்கிறது",
@@ -227,15 +304,15 @@ const translations = {
     "howItWorks.step6.desc": "உடனடி சரிபார்ப்புக்கு QR குறியீட்டைப் பெறுங்கள்",
 
     // Features
-    "features.title": "இந்தியாவின் தொழிலாளர்களுக்காக கட்டப்பட்டது",
-    "features.subtitle": "அணுகல், நம்பிக்கை மற்றும் தொழிலாளர் உரிமைகளை மையமாக வைத்து வடிவமைக்கப்பட்ட அம்சங்கள்",
+    "features.title": "இந்தியாவின் தொழிலாளர்களும் வணிகங்களும் காக்கப்பட்டது", // Updated for Jan Genie
+    "features.subtitle": "அணுகல், நம்பிக்கை மற்றும் வளர்ச்சியை மையமாக வைத்து வடிவமைக்கப்பட்ட அம்சங்கள்",
     "features.language.title": "பிராந்திய மொழி ஆதரவு",
     "features.language.desc": "தமிழ், இந்தி, பெங்காலி மற்றும் 15+ பிற இந்திய மொழிகளில் ஒப்பந்தங்களை உருவாக்கி புரிந்து கொள்ளுங்கள்",
     "features.blockchain.title": "பிளாக்செயின்-ஆதரவு நம்பிக்கை",
     "features.blockchain.desc":
       "மாறாத பதிவுகள் உங்கள் ஒப்பந்தங்களை சிதைக்கவோ அல்லது சர்ச்சைக்கு உட்படுத்தவோ முடியாது என்பதை உறுதி செய்கின்றன",
     "features.ai.title": "AI-இயங்கும் நியாயம்",
-    "features.ai.desc": "ஸ்மார்ட் அல்காரிதம்கள் நியாயமற்ற விதிமுறைகளைக் கண்டறிந்து தொழிலாளர் பாதுகாப்புக்கான மேம்பாடுகளை பரிந்துரைக்கின்றன",
+    "features.ai.desc": "ஸ்மார்ட் அல்காரிதம்கள் நியாயமற்ற விதிமுறைகளைக் கண்டறிந்து தொழிலாளர் பாதுகாக்குக்கான மேம்பாடுகளை பரிந்துரைக்கின்றன",
     "features.rights.title": "தொழிலாளர் உரிமைகளைப் பாதுகாக்கிறது",
     "features.rights.desc": "உள்ளமைக்கப்பட்ட பாதுகாப்புகள் நியாயமான ஊதியங்கள், வேலை நிலைமைகள் மற்றும் சட்ட இணக்கத்தை உறுதி செய்கின்றன",
     "features.accessible.title": "வங்கி இல்லாதவர்களுக்கு அணுகக்கூடியது",
@@ -245,7 +322,7 @@ const translations = {
 
     // Impact
     "impact.title": "உண்மையான தாக்கத்தை ஏற்படுத்துதல்",
-    "impact.subtitle": "பாதுகாப்பான, நியாயமான டிஜிட்டல் ஒப்பந்தங்களுடன் இந்தியா முழுவதும் உள்ள தொழிலாளர்களை வலுப்படுத்துதல்",
+    "impact.subtitle": "பாதுகாப்பான, நியாயமான டிஜிட்டல் ஒப்பந்தங்களுடன் இந்தியா முழுவதும் உள்ள தொழிலாளர்களும் வணிகங்களும் வலுப்படுத்துதல்", // Updated for businesses too
     "impact.workers": "பாதுகாக்கப்பட்ட தொழிலாளர்கள்",
     "impact.workersDesc": "முறைசாரா தொழிலாளர்களுக்கு இப்போது பாதுகாப்பான, சட்டப்பூர்வமாக கட்டுப்படுத்தும் ஒப்பந்தங்கள் உள்ளன",
     "impact.contracts": "உருவாக்கப்பட்ட ஒப்பந்தங்கள்",
@@ -255,7 +332,7 @@ const translations = {
 
     // Testimonials
     "testimonials.title": "தொழிலாளர்கள் என்ன சொல்கிறார்கள்",
-    "testimonials.subtitle": "ஜன்-கான்ட்ராக்ட் மூலம் பாதுகாப்பைக் கண்டறிந்த தொழிலாளர்களின் உண்மையான கதைகள்",
+    "testimonials.subtitle": "ஜன்-கான்ட்ராக்ட் மூலம் பாதுகாப்பைக் கண்டறிந்த தொழிலாளர்களின் உண்மையான கதைகள்", // Updated brand name
     "testimonials.rajesh.name": "ராஜேஷ் குமார்",
     "testimonials.rajesh.role": "கட்டுமான தொழிலாளி, டெல்லி",
     "testimonials.rajesh.text":
@@ -272,15 +349,25 @@ const translations = {
     // CTA
     "cta.title": "ஒவ்வொரு தொழிலாளியின் கைகுலுக்கலும் மதிக்கப்படும் எதிர்காலத்தை கட்டியெழுப்புவதில் எங்களுடன் சேருங்கள்",
     "cta.subtitle":
-      "பாதுகாக்கும் மற்றும் சேவை செய்யும் தொழில்நுட்பத்துடன் இந்தியாவின் முறைசாரா தொழிலாளர் சக்தியை வலுப்படுத்த எங்களுக்கு உதவுங்கள்.",
+      "பாதுகாக்கும் மற்றும் சேவை செய்யும் தொழில்நுட்பத்துடன் இந்தியாவின் முறைசாரா தொழிலாளர் சக்தியை மற்றும் வணிக வளர்ச்சியை வலுப்படுத்த எங்களுக்கு உதவுங்கள்.",
     "cta.github": "GitHub இல் பங்களிக்கவும்",
 
     // Footer
-    "footer.description": "பாதுகாப்பான, நியாயமான டிஜிட்டல் ஒப்பந்தங்களுடன் இந்தியாவின் முறைசாரா தொழிலாளர் சக்தியை வலுப்படுத்துதல்.",
+    "footer.description": "பாதுகாப்பான, நியாயமான டிஜிட்டல் ஒப்பந்தங்களுடன் இந்தியாவின் முறைசாரா தொழிலாளர்களும் வணிகங்களும் வலுப்படுத்துதல்.",
     "footer.product": "தயாரிப்பு",
     "footer.resources": "வளங்கள்",
     "footer.contact": "தொடர்பு",
-    "footer.copyright": "© 2024 ஜன்-கான்ட்ராக்ட். இந்தியாவின் தொழிலாளர்களுக்காக ❤️ உடன் கட்டப்பட்டது.",
+    "footer.copyright": "© 2024 ஜன்-கான்ட்ராக்ட். இந்தியாவின் தொழிலாளர்களும் வணிகங்களும் காக்கப்பட்டது ❤️ உடன்.",
+
+    // Financial Dashboard
+    "financial.title": "நிதி டாஷ்போர்டு",
+    "financial.subtitle": "கையெழுத்து பதிவுகளை டிஜிட்டல் நுண்ணறிவுகளாக மாற்றுங்கள்",
+    "financial.upload": "நிதி பதிவுகளை பதிவேற்றுங்கள்",
+    "financial.processing": "AI OCR உடன் செயலாக்கம்...",
+    "financial.revenue": "மொத்த வருமானம்",
+    "financial.expenses": "மொத்த செலவுகள்",
+    "financial.profit": "நிகர லாபம்",
+    "financial.assets": "மொத்த சொத்துக்கள்",
   },
 }
 

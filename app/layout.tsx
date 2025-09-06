@@ -6,9 +6,9 @@ import { LanguageProvider } from "@/contexts/language-context"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "Jan-Contract - Empowering India's Workforce",
+  title: "Jan Genie - Empowering India's Workforce & Government Schemes",
   description:
-    "Simple, Secure Digital Agreements for Everyone. Blockchain-powered trust meets AI-driven fairness for workers across India.",
+    "AI-powered platform for digital agreements and government scheme eligibility. Blockchain-powered trust meets AI-driven fairness for workers across India.",
   generator: "v0.app",
 }
 
